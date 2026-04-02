@@ -1,11 +1,152 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qahramon | Offensive Security</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: #cfcfcf;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #111;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #00ff9f;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #777;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00ff9f;
+}
+
+main {
+    max-width: 750px;
+    margin: auto;
+    padding: 3rem 2rem;
+    flex: 1;
+}
+
+.terminal {
+    background: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.prompt {
+    color: #00ff9f;
+}
+
+.command {
+    color: #fff;
+}
+
+.output {
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #00ff9f;
+    margin-top: 2rem;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    color: #444;
+    border-top: 1px solid #111;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, I'm Qahramon</h1>
-  <p>Welcome to my portfolio!</p>
+
+<nav>
+    <div class="logo">ciprobe@root</div>
+    <div class="nav-links">
+        <a href="#">about</a>
+        <a href="#">projects</a>
+        <a href="#">contact</a>
+    </div>
+</nav>
+
+<main>
+
+<div class="terminal">
+    <p><span class="prompt">$</span> <span class="command">whoami</span></p>
+    <p class="output">Choriyev Qahramon (ciprobe)</p>
+
+    <p><span class="prompt">$</span> <span class="command">cat bio.txt</span></p>
+    <p class="output">
+        Offensive security researcher focused on web exploitation,
+        vulnerability discovery, and cybersecurity education.
+    </p>
+
+    <p><span class="prompt">$</span> <span class="command">cat projects.txt</span></p>
+    <p class="output">
+        - hacknow.uz (Cybersecurity learning platform) <br>
+        - CTF Challenges <br>
+        - Practical hacking labs
+    </p>
+</div>
+
+<h2>// mission</h2>
+<p>
+    Building <a href="#">hacknow.uz</a> to teach ethical hacking 
+    and cybersecurity in a practical and accessible way.
+</p>
+
+<h2>// links</h2>
+<p>
+    Telegram: <a href="https://t.me/csshodiyor">@csshodiyor</a><br>
+    X: <a href="https://x.com/trk_1337">@trk_1337</a>
+</p>
+
+<h2>// status</h2>
+<p>
+    Open for collaboration, penetration testing, and CTF development.
+</p>
+
+</main>
+
+<footer>
+    &lt;/&gt; 2026 ciprobe — offensive security
+</footer>
+
 </body>
 </html>
